@@ -2,13 +2,26 @@
   margin: 0%;
   padding: 0%;
 }
+
 body {
   background-color: #4b535a;
   color: white;
   font-family: "Libre Baskerville, sans-serif";
-  font-weight: 200;
-  font-size: 30px;
+  font-size: 1.25rem; /*20 px*/
+  line-height: 1.75rem; /*28 px*/
+  letter-spacing: 0.125rem; /*2 px*/
 }
+
+nav {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.fa-bars{
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 
 .name-title-text {
   display: grid;
@@ -19,7 +32,7 @@ body {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 2rem;
-  height: 100;
+
 }
 .introduction {
   width: 60%;
@@ -91,10 +104,6 @@ body {
   padding-top: 1rem;
 }
 
-.btn-primary {
-  background-color: #5283ff;
-}
-
 .card-body {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -115,7 +124,7 @@ body {
   border-radius: 8px;
 }
 
-.contact-links {
+.menu {
   background-color: #4b535a;
   height: 40px;
 }
@@ -138,14 +147,13 @@ body {
   text-decoration: none;
   padding: 10px;
 }
-a {
-  box-shadow: inset 0 0 0 0 #212529;
-  color: white;
+a, .fa-bars {
+  box-shadow: inset 0 0 0 0 #201e3a;
+  color: #d8e0e1;
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-a:hover {
-  box-shadow: inset 500px 0 0 0 #212529;
-  color: white;
+a:hover, .fa-bars:hover {
+  box-shadow: inset 500px 0 0 0 #201e3a;
 }
