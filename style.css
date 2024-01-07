@@ -1,0 +1,151 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: #4b535a;
+  color: white;
+  font-family: "Libre Baskerville, sans-serif";
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.name-title-text {
+  display: grid;
+  background-color: #4b535a;
+  color: white;
+  height: fit-content;
+  justify-items: center;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  height: 100;
+}
+.introduction {
+  width: 60%;
+}
+.profile-img {
+  height: 80px;
+  border-radius: 50%;
+}
+
+.project1 {
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto;
+  background-color: #212529;
+  color: white;
+  padding: 1rem;
+}
+
+.prompt-engineering-project-img {
+  width: 400px;
+  height: 450px;
+}
+
+.project1-description {
+  display: grid;
+  grid-column: 2;
+  text-align: center;
+}
+
+.project2 {
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto auto;
+  background-color: #4b535a;
+  color: white;
+  padding-top: 2rem;
+}
+
+.travelers-journal-img {
+  width: 250px;
+  height: 450px;
+}
+
+.project2-description {
+  display: grid;
+  grid-column: 1 / 5;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.project3 {
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  background-color: #212529;
+  color: white;
+  padding-top: 2rem;
+}
+
+.seashore-hotel-img {
+  width: 400px;
+  height: 300px;
+}
+
+.project3-description {
+  display: grid;
+  grid-column: 1 / 4;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.btn-primary {
+  background-color: #5283ff;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10%;
+  text-align: center;
+}
+
+.contact-me {
+  grid-column: 2 / 3;
+}
+
+.btn {
+  background-color: #212529;
+}
+#contact-btn {
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+}
+
+.contact-links {
+  background-color: #4b535a;
+  height: 40px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: large;
+}
+
+.skills-li {
+  list-style-type: "* ";
+}
+.header-li {
+  padding: 1rem;
+  list-style-type: none;
+}
+
+.header a {
+  text-decoration: none;
+  padding: 10px;
+}
+a {
+  box-shadow: inset 0 0 0 0 #212529;
+  color: white;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+a:hover {
+  box-shadow: inset 500px 0 0 0 #212529;
+  color: white;
+}
