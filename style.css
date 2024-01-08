@@ -1,40 +1,129 @@
-* {
-  margin: 0%;
-  padding: 0%;
-}
-
 body {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville, sans-serif";
   background-color: #4b535a;
   color: white;
-  font-family: "Libre Baskerville, sans-serif";
   font-size: 1.25rem; /*20 px*/
   line-height: 1.75rem; /*28 px*/
   letter-spacing: 0.125rem; /*2 px*/
 }
 
+/*******************navigation section***********/
 nav {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.fa-bars{
+.header-li {
+  box-shadow: inset 0 0 0 0 #201e3a;
+  list-style-type: none;
+  color: #d8e0e1;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.header-li a:hover {
+  box-shadow: inset 500px 0 0 0 #201e3a;
+  padding-left: 2rem;
+}
+
+.menu {
+  margin: 2rem;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear; /*will come into effect when javascript is added.*/
+}
+
+.show-menu {
+  height: 10rem;
+}
+
+.fa-bars {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #d8e0e1;
   cursor: pointer;
 }
 
+.fa-bars-transparent {
+  display: none;
+}
+
+.fa-bars:hover {
+  color: #d8e0e1;
+}
+
+.menu a {
+  color: #d8e0e1;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear; /*will come into effect when javascript is added.*/
+}
+
+.menu a:hover {
+  background: #d8e0e1;
+  color: #d8e0e1;
+  padding-left: 1.5rem;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  .nav-main {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .menu {
+    height: auto;
+    display: flex;
+  }
+
+  .menu a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+
+  .main a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+/****************************introduction section**************************************/
+.developer-introduction {
+  box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
+}
 
 .name-title-text {
   display: grid;
-  background-color: #4b535a;
   color: white;
   height: fit-content;
   justify-items: center;
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 2rem;
-
 }
+
 .introduction {
+  padding: 0 2rem;
   width: 60%;
 }
 .profile-img {
@@ -42,15 +131,20 @@ nav {
   border-radius: 50%;
 }
 
+/********************************projects section**************************************/
+.project-section {
+  box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
+}
+
 .project1 {
+  box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
   display: grid;
   place-items: center;
   grid-template-columns: auto auto;
-  background-color: #212529;
-  color: white;
+  background-color: rgb(32, 30, 58);
   padding: 1rem;
+  box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
 }
-
 .prompt-engineering-project-img {
   width: 400px;
   height: 450px;
@@ -63,11 +157,10 @@ nav {
 }
 
 .project2 {
+  box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
   display: grid;
   place-items: center;
   grid-template-columns: auto auto auto auto;
-  background-color: #4b535a;
-  color: white;
   padding-top: 2rem;
 }
 
@@ -84,12 +177,12 @@ nav {
 }
 
 .project3 {
+  box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
   display: grid;
   place-items: center;
   grid-template-columns: auto auto auto;
-  background-color: #212529;
-  color: white;
   padding-top: 2rem;
+  background-color: #201e3a;
 }
 
 .seashore-hotel-img {
@@ -104,56 +197,34 @@ nav {
   padding-top: 1rem;
 }
 
+/*************************contact css*****************/
 .card-body {
   display: grid;
-  grid-template-columns: auto auto auto;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
   padding: 10%;
   text-align: center;
 }
 
-.contact-me {
-  grid-column: 2 / 3;
-}
-
-.btn {
-  background-color: #212529;
-}
-#contact-btn {
-  text-decoration: none;
-  color: white;
-  border-radius: 8px;
-}
-
-.menu {
-  background-color: #4b535a;
-  height: 40px;
-}
-
-.header {
-  display: flex;
-  flex-direction: row-reverse;
-  font-size: large;
-}
-
-.skills-li {
-  list-style-type: "* ";
-}
-.header-li {
-  padding: 1rem;
-  list-style-type: none;
-}
-
-.header a {
-  text-decoration: none;
-  padding: 10px;
-}
-a, .fa-bars {
+/********************resume css**********************/
+.skills-link {
   box-shadow: inset 0 0 0 0 #201e3a;
   color: #d8e0e1;
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-a:hover, .fa-bars:hover {
+.skills-link:hover {
   box-shadow: inset 500px 0 0 0 #201e3a;
+  padding-left: 2rem;
+}
+
+.skills-list {
+  list-style-type: "* ";
+}
+
+/**************************************footer section************************************/
+#footer {
+  display: flex;
+  justify-content: center;
 }
