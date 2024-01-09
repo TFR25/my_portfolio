@@ -42,6 +42,10 @@ nav {
   height: 10rem;
 }
 
+.logo {
+  width: 22rem;
+}
+
 .fa-bars {
   font-size: 1.5rem;
   color: #d8e0e1;
