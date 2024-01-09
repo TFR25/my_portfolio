@@ -20,25 +20,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="text-bg-dark">
-    <section class="card-body">
+  <body class="text-bg-dark container">
+    <section class="card-body ">
       <section class="contact-info">
-        <h1><b>Contact Me</b></h1>
         <img
-          src="./resources/HeadShot.jpg"
+          src="./resources/profileImage_logo/HeadShot.jpg"
           height="100px"
           class="profile-img"
           alt="Authors profile image"
         />
+        <h1><b>Contact Me Here </b></h1>
         <p>Tel: +1(360)843-3647</p>
         <p>Email: tfernandez25@gmail.com</p>
-        <a href="index.html" id="contact-btn"><b>Return home</b>
+        <!-- <a href="index.html" id="contact-btn"><b>Return home</b> -->
       </section>
 
-      <label for="textarea"><h2>Send me a message</h2></label>
-      <p>
-        <textarea id="textarea" rows="6"></textarea>
-      </p>
+      <div class="message-box container">
+        <h3>Or use this form</h3>
+        <form action="/action_page.php">
+          <!-- <label for="fname">First Name</label> -->
+          <input type="text" id="fname" name="firstname" placeholder="First Name">
+      
+          <!-- <label for="lname">Last Name</label> -->
+          <input type="text" id="lname" name="lastname" placeholder="Last Name">
+      
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="I'd love to hear from you. Write something.. " style="height:200px"></textarea>
+      
+          <input class="submit" type="submit" value="Submit">
+        </form>
+      </div>
 
     <script
       src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
@@ -47,3 +58,4 @@
     ></script>
   </body>
 </html>
+
