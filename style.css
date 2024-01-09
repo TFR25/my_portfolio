@@ -14,7 +14,7 @@ body {
 
 /*******************navigation section***********/
 nav {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.3);
 }
 
 .header-li {
@@ -27,7 +27,7 @@ nav {
 }
 
 .header-li a:hover {
-  box-shadow: inset 1000px 0 0 0 #201e3a;
+  box-shadow: inset 62.5rem 0 0 0 #201e3a;
   padding-left: 2rem;
 }
 
@@ -35,7 +35,7 @@ nav {
   margin: 2rem;
   height: 0;
   overflow: hidden;
-  transition: all 0.3s linear; /*will come into effect when javascript is added.*/
+  transition: all 0.3s linear; /
 }
 
 .show-menu {
@@ -64,7 +64,7 @@ nav {
   color: #d8e0e1;
   display: block;
   padding: 0.5rem 1rem;
-  transition: all 0.3s linear; /*will come into effect when javascript is added.*/
+  transition: all 0.3s linear; 
 }
 
 .menu a:hover {
@@ -80,7 +80,7 @@ nav {
   padding: 1rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
   .nav-main {
     margin: 0 auto;
     display: flex;
@@ -115,7 +115,7 @@ nav {
 
 /****************************introduction section**************************************/
 .developer-introduction {
-  box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
+  box-shadow: 0 0.313rem 0.938rem rgba(32, 30, 52, 8);
 }
 
 .name-title-text {
@@ -131,19 +131,17 @@ nav {
 .introduction {
   padding: 0 2rem;
   width: 60%;
-  
 }
 .profile-img {
   height: 10rem;
   border-radius: 50%;
   margin-bottom: 2rem;
-
 }
 
 /********************************projects section**************************************/
 
 .project-section {
-  box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
+  box-shadow: 0 0.313rem 0.938rem rgba(32, 30, 52, 8);
   display: grid;
   place-items: center;
   grid-template-columns: auto;
@@ -153,9 +151,9 @@ nav {
 
 /******* project 1 start *******/
 .prompt-engineering-project-img {
-  box-shadow: 0 5px 15px lightblue;
-  width: 250px;
-  height: 300px;
+  box-shadow: 0 0.313rem 0.938rem lightblue;
+  width: 15.625rem;
+  height: 18.75rem;
 }
 
 .project1-description {
@@ -165,14 +163,13 @@ nav {
   padding: 1rem;
 }
 
-@media (min-width: 768px) {
-
+@media (min-width: 48rem) {
   .project-section {
-    box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
+    box-shadow: 0 0.313rem 0.938rem rgba(32, 30, 52, 8);
   }
 
   .project1-section {
-    box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
+    box-shadow: 0 0.313rem 0.938rem rgba(32, 30, 52, 8);
     display: grid;
     place-items: center;
     grid-template-columns: auto auto;
@@ -180,8 +177,8 @@ nav {
     padding: 1rem;
   }
   .prompt-engineering-project-img {
-    width: 400px;
-    height: 450px;
+    width: 25rem;
+    height: 25.128rem;
   }
 
   .project1-description {
@@ -195,20 +192,23 @@ nav {
 
 /********project 2 start********/
 .project2-section {
-  box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
+  box-shadow: 0 0.313rem 0.938rem rgba(32, 30, 52, 8);
   display: grid;
   place-items: center;
   padding: 1rem;
 }
 
-.project2-img {
-  box-shadow: 0 5px 15px lightblue;
-  width: 300px;
-  height: 250px;
+.project2-img1 {
+  width: 18.75rem;
+  height: 31.25rem;
+  box-shadow: 0 0.313rem 0.938rem lightblue;
+}
+
+.project2-img2 {
+  display: none;
 }
 
 .project2-description {
-  border-top: 1px solid white;
   display: grid;
   grid-column: 1;
   text-align: center;
@@ -218,27 +218,32 @@ nav {
 .project2-section a {
   color: #d8e0e1;
   padding: 1rem;
-  transition: all 0.3s linear; /*will come into effect when javascript is added.*/
+  transition: all 0.3s linear;
 }
 
 .project2-section a:hover {
-  text-shadow: 0 5px 15px lightblue;
+  text-shadow: 0 0.313rem 0.938rem lightblue;
   padding-left: 2rem;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62rem) {
   .project2-section {
-    box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
+    box-shadow: 0 0.313rem 0.938rem rgba(32, 30, 52, 8);
     display: grid;
-    grid-template-columns: auto auto;
+    align-items: center;
     padding: 2rem;
   }
-  .project2-img {
-    display: grid;
-    width: 500px;
-    height: 450px;
-    box-shadow: 0 5px 15px lightblue;
+
+  .project2-img1 {
+    display: none;
   }
+
+  .project2-img2 {
+    display: grid;
+    align-items: center;
+    box-shadow: 0 0.313rem 0.938rem lightblue;
+  }
+
   .project2-description {
     border-top: 0;
     display: grid;
@@ -252,7 +257,7 @@ nav {
 
 /********project 3 start*******/
 .project3-section {
-  box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
+  box-shadow: 0 0.313rem 0.938rem rgba(32, 30, 52, 8);
   display: grid;
   grid-column: 1;
   place-items: center;
@@ -261,10 +266,10 @@ nav {
 }
 
 .project3-img {
-  width: 300px;
-  height: 200px;
+  width: 18.75rem;
+  height: 12.25rem;
   padding: 1rem;
-  box-shadow: 0 5px 15px lightblue;
+  box-shadow: 0 0.313rem 0.938rem lightblue;
 }
 
 .project3-description {
@@ -282,26 +287,25 @@ nav {
 }
 
 .project3-description a:hover {
-  text-shadow: 0 5px 15px lightblue;
+  text-shadow: 0 0.313rem 0.938rem lightblue;
   padding-left: 2rem;
 }
 
-
-@media (min-width: 1000px) {
+@media (min-width: 62rem) {
   .project3-section {
-    box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
+    box-shadow: 0 0.313rem 0.938rem rgba(32, 30, 52, 8);
     display: grid;
     place-items: center;
     grid-template-columns: auto auto auto;
     padding-top: 2rem;
     background-color: #201e3a;
   }
-  
+
   .project3-img {
-    width: 300px;
-    height: 200px;
+    width: 18.75rem;
+    height: 12.25rem;
   }
-  
+
   .project3-description {
     display: grid;
     grid-column: 1 / 4;
@@ -326,10 +330,12 @@ h3 {
   padding: 2rem;
 }
 
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 80%;
   padding: 0.75rem;
-  border: 0.063rem solid #201e3a;;
+  border: 0.063rem solid #201e3a;
   border-radius: 0.25rem;
   box-sizing: border-box;
   margin-top: 0.375rem;
@@ -337,7 +343,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #2f3438;
   color: white;
   padding: 0.75rem 1.25rem;
@@ -346,8 +352,8 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: #3f454b;;
+input[type="submit"]:hover {
+  background-color: #3f454b;
 }
 
 .message-box {
@@ -356,7 +362,7 @@ input[type=submit]:hover {
   padding: 0.938rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .card-body {
     display: grid;
     overflow: hidden;
@@ -364,36 +370,93 @@ input[type=submit]:hover {
     padding: 5%;
     text-align: center;
   }
-  
-  input[type=text], select, textarea {
+
+  input[type="text"],
+  select,
+  textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #201e3a;;
-    border-radius: 4px;
+    padding: 0.75rem;
+    border: 0.636rem solid #201e3a;
+    border-radius: 0.25rem;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 0.375rem;
+    margin-bottom: 1rem;
     resize: vertical;
   }
-  
-  input[type=submit] {
+
+  input[type="submit"] {
     background-color: #2f3438;
     color: white;
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
   }
-  
-  input[type=submit]:hover {
-    background-color: #3f454b;;
+
+  input[type="submit"]:hover {
+    background-color: #3f454b;
   }
-  
+
   .message-box {
-    margin-left: 30px;
-    border-radius: 15px;
+    margin-left: 1.875rem;
+    border-radius: 0.938rem;
     background-color: #4b535a;
-    padding: 15px;
+    padding: 0.938rem;
+  }
+}
+
+/********project 4 start********/
+.project4-section {
+  box-shadow: 0 0.313rem 0.938rem rgba(32, 30, 52, 8);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.project4-img {
+  box-shadow: 0 0.313rem 0.938rem lightblue;
+  width: 18.75rem;
+  height: 15.625rem;
+}
+
+.project4-description {
+  border-top: 0.636rem solid white;
+  display: grid;
+  grid-column: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.project4-section a {
+  color: #d8e0e1;
+  padding: 1rem;
+  transition: all 0.3s linear; 
+}
+
+.project4-section a:hover {
+  text-shadow: 0 0.313rem 0.938rem lightblue;
+  padding-left: 2rem;
+}
+
+@media (min-width: 62rem) {
+  .project4-section {
+    box-shadow: 0 0.313rem 0.938rem rgba(32, 30, 52, 8);
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2rem;
+  }
+  .project4-img {
+    display: grid;
+    width: 37.5rem;
+    height: 28.125rem;
+    box-shadow: 0 0.313rem 0.938rem lightblue;
+  }
+  .project4-description {
+    border-top: 0;
+    display: grid;
+    grid-column: 1;
+    text-align: center;
+    padding: 1rem;
   }
 }
 
@@ -406,7 +469,7 @@ input[type=submit]:hover {
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .skills-link:hover {
-  box-shadow: inset 500px 0 0 0 #201e3a;
+  box-shadow: inset 31.25rem 0 0 0 #201e3a;
   padding-left: 2rem;
 }
 
