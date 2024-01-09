@@ -201,10 +201,10 @@ nav {
   padding: 1rem;
 }
 
-.motivational-poster-img {
+.project2-img {
   box-shadow: 0 5px 15px lightblue;
-  width: 400px;
-  height: 350px;
+  width: 300px;
+  height: 250px;
 }
 
 .project2-description {
@@ -215,17 +215,28 @@ nav {
   padding: 1rem;
 }
 
-@media (min-width: 768px) {
+.project2-section a {
+  color: #d8e0e1;
+  padding: 1rem;
+  transition: all 0.3s linear; /*will come into effect when javascript is added.*/
+}
+
+.project2-section a:hover {
+  text-shadow: 0 5px 15px lightblue;
+  padding-left: 2rem;
+}
+
+@media (min-width: 1000px) {
   .project2-section {
     box-shadow: 0 5px 15px rgba(32, 30, 52, 8);
     display: grid;
     grid-template-columns: auto auto;
     padding: 2rem;
   }
-  .motivational-poster-img {
+  .project2-img {
     display: grid;
-    width: 300px;
-    height: 250px;
+    width: 500px;
+    height: 450px;
     box-shadow: 0 5px 15px lightblue;
   }
   .project2-description {
@@ -236,6 +247,7 @@ nav {
     padding: 1rem;
   }
 }
+
 /********project 2 end********/
 
 /********project 3 start*******/
