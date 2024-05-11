@@ -477,6 +477,16 @@ input[type="submit"]:hover {
   list-style-type: "* ";
 }
 
+.column {
+  float: left;
+  width: 50%;
+}
+#skills:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /**************************************footer section************************************/
 #footer {
   display: flex;
